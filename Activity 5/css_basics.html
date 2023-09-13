@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .author{
-            background-color: darkslategray;
+        a{
+            background-color: darkgreen;
             color: white;
         }
-        #span{
-            color: grey;
+        #name-span{
+            color: white;
+            background-color: rgb(1, 50, 32);
+            border-radius: 10px;
+            padding: 2px 5px;
         }
-
+        span{
+            display: block;
+        }
+        
     </style>
 
 </head>
 <body>
     <header>
-        <header>
-            <h1><span id="span">Carlos</span>Moritcho</h1>
+            <h1><span id="name-span">Carlos</span>Moritcho</h1>
             <p> I am from Pagadian City and currently a 3rd year BS in Computer Science at Xavier University Ateneo de Cagayan. </p>
             <hr>
     
@@ -32,9 +37,9 @@
                     <li>Cagayan de Oro City, Misamis Oriental</li>
                     <li>0995 165 6425</li>
                     <li>carlosmoritcho39@gmail.com</li>
-                    <li>facebook: <a href="https://web.facebook.com/carlos.f.moritcho/" style="text-decoration: none; color: black;">Carlos F Moritcho</a></li>
+                    <li>facebook: <a href="https://web.facebook.com/carlos.f.moritcho/" style="text-decoration: none; background-color: white!important; color: black !important;">Carlos F Moritcho</a></li>
                     <br>
-                    <button>Connect with Me</button>
+                    <button class="button"><a href="https://www.linkedin.com/in/carlos-gabriele-moritcho-600518217/" target="_blank" style="text-decoration: none;"> Connect with Me</a></button>
                 </ul>
             </section>
             <!-- End of Contact Information -->
@@ -70,6 +75,8 @@
                 <h2>Skills</h2>
                 <h3>None</h3>
                 <p>None</p>
+
+                <button class="button">Add Skills</button>
             </section>
             <!-- End of Skills -->
     
@@ -89,7 +96,7 @@
     <main></main>
     <footer>
         <div>
-            <a class="author" href="https://github.com/Gaviermax" target="_blank" style="text-decoration: none; text-align: center;">Created by Carlos Gabriele F. Moritcho</a>
+            <span>Created by</span> <a class="author" href="https://github.com/Gaviermax" target="_blank" style="text-decoration: none; text-align: center;">Carlos Gabriele F. Moritcho</a>
         </div>
     </footer>
     
