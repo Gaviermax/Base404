@@ -1,10 +1,31 @@
+body{
+   /* box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center; */
+   height: 100%;
+   background-color: yellow;
+}
 .flex-container{
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    justify-content: center;
     background-color: red;
+    height: 100vh;
 }
 .flex-item{
     background-color: aqua;
+    font-size: 2em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: blueviolet;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
 }
