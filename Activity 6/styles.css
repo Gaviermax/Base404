@@ -1,0 +1,10 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background-color: red;
+}
+.flex-item{
+    background-color: aqua;
+}
