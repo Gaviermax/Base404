@@ -25,6 +25,10 @@
         .about-header{
             height: 50vh;
         }
+        .author-link{
+            text-decoration: none;
+            color: black;
+        }
     </style>
     
 </head>
@@ -53,13 +57,13 @@
                       </li>
                     <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="#">About</a>
+                        <a class="nav-link active text-light" href="#about-header">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="#">Services</a>
+                        <a class="nav-link active text-light" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light" href="#" >Contact</a>
+                        <a class="nav-link active text-light" href="#author" >Contact</a>
                     </li>
                     </li>
         
@@ -111,12 +115,12 @@
             
           </div>
           <!-- About header, info -->
-          <div class="about-header container mx-auto py-5 text-left">
-            <h3 class="display-3">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Repellat, distinctio?</h3>
+          <div id="about-header" class="about-header container mx-auto py-5 text-left">
+            <h3 class="display-3 py-3">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Repellat, distinctio?</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos consequuntur ab officiis commodi labore dicta error hic sed consequatur voluptatibus.</p>
           </div>
 
-          <div class="container-fluid p-5 bg-success">
+          <div id="services" class="container-fluid p-5 bg-success">
                 <h1 class="text-light text-center display-3 fw-bold py-5">Dreams into Digial Realities</h1>
                 <div class="card mb-3">
                     <img src="https://us-wd.gr-cdn.com/blog/sites/5/2021/06/1329/website-ideas-business-website-example.jpg" class="card-img-top" alt="...">
@@ -143,11 +147,12 @@
                     </div>
                 </div>
           </div>
-
-
-
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container-fluid text-center mx-auto py-5">
+            <a id="author" class="author-link" href="">Created by CARLOS GABRIELE F. MORITCHO</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
