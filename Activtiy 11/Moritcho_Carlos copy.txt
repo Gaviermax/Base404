@@ -1,0 +1,137 @@
+function greet(name){
+    console.log(`Hello, ${name}`);
+}
+
+function add(a, b){
+    let sum = parseInt(a + b);
+    return sum;
+}
+
+let day = 3;
+
+function getDay(day){
+    switch(day){
+        case 1:
+            day = "Monday";
+            console.log(day);
+            break;
+        case 2:
+            day = "Tuesday";
+            console.log(day);
+            break;
+        case 3:
+            day = "Wednesday";
+            console.log(day);
+            break;
+        case 4:
+            day = "Thursday";
+            console.log(day);
+            break;
+        case 5:
+            day = "Friday";
+            console.log(day);
+            break;
+        case 6:
+            day = "Saturday";
+            console.log(day);
+            break;
+        case 7:
+            day = "Sunday";
+            console.log(day);
+            break;
+        default:
+            console.log("Day not found")
+    }
+}
+day = getDay(day);
+
+
+
+function fruitInfo(fruit){
+    // 2.2
+    console.log(`${fruit} - this is the description of the fruit`)
+}
+fruitInfo("grapes");
+
+
+let person = {
+    firstName: "Carlos",
+    lastName: "Moritcho",
+    birthYear: 2002,
+    fullName: function(){
+        let fullName = `${this.firstName}  ${this.lastName}`
+        return fullName;
+    }
+
+}
+console.log(person.fullName());
+
+
+function getAge(object){
+// 3.2
+    return object.birthYear;
+}
+console.log(getAge(person));
+
+
+let cars = ["honda", "toyota", "porsche"]
+
+
+function getFirstElement(array){
+    return array[0]
+
+}
+function getLastElement(array){
+    return array[array.length-1]
+
+}
+console.log(getFirstElement(cars))
+console.log(getLastElement(cars))
+
+for(let i =0; i <=10; i++){
+    console.log(i);
+}
+function listArray (array){
+    for (const item of array) {
+        console.log(item);
+    }
+
+}
+
+listArray(cars);
+
+function findEvenNumebrs(n){
+    let count=0;
+    let evenNubers =[];
+    while(count <=n){
+       if(count % 2 ==0){
+        evenNubers.push(count)
+        console.log(count)
+       }
+        count++;
+    }
+
+}
+findEvenNumebrs(10);
+
+let numArray = [0,1,2,3,4,5,6,7,8,9,10]
+
+function multiplyArray(numArray){
+    for (const item of numArray) {
+        console.log(item*2);
+    }
+}
+
+console.log("satart")
+multiplyArray(numArray);
+
+function sumArray(numArray){
+    let sum = 0;
+    for (let item of numArray) {
+        sum += item;
+    }
+    console.log(sum);
+}
+
+sumArray(numArray);
+
